@@ -8,6 +8,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".toml", ".txt", ".cfg", ".cff"}
+BLOCKED_PARTS = {
+    ".git",
+    ".venv",
+    "venv",
+    ".tox",
+    ".nox",
+    "__pycache__",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".mypy_cache",
+    "_build",
+    "generated",
+}
 PATH_PATTERNS = (
     r"/mnt/" + r"data/",
     r"[A-Za-z]:" + r"\\Users\\",
@@ -28,14 +41,7 @@ def public_text_files(root: Path) -> Iterable[Path]:
     for path in root.rglob("*"):
         if not path.is_file():
             continue
-        blocked_parts = {
-            ".git",
-            "__pycache__",
-            ".pytest_cache",
-            "_build",
-            "generated",
-        }
-        if any(part in blocked_parts for part in path.parts):
+        if any(part in BLOCKED_PARTS for part in path.parts):
             continue
         if path.resolve() == Path(__file__).resolve():
             continue

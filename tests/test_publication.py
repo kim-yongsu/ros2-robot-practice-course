@@ -10,6 +10,8 @@ from pathlib import Path
 
 import yaml
 
+from scripts.content_lint import find_content_errors
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -76,6 +78,19 @@ def test_no_undefined_production_trace_ids() -> None:
     pattern = re.compile(r"(?:\[)?B\d{2}-S\d{2}(?:\])?")
     for path in (ROOT / "docs/source").rglob("*.md"):
         assert pattern.search(path.read_text(encoding="utf-8")) is None
+
+
+def test_content_lint_ignores_virtual_environment(tmp_path: Path) -> None:
+    """Content lint ignores generated virtual-environment dependencies."""
+    dependency = tmp_path / ".venv" / "lib" / "python3.11" / "site-packages" / "dependency.py"
+    dependency.parent.mkdir(parents=True)
+    private_path = "/" + "home" + "/generated-environment/"
+    dependency.write_text(
+        f'PRIVATE_PATH = "{private_path}"\n',
+        encoding="utf-8",
+    )
+
+    assert find_content_errors(tmp_path) == []
 
 
 def test_public_python_modules_have_docstrings() -> None:
