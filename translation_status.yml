@@ -1,0 +1,12 @@
+canonical_language: ko
+canonical_version: "1.0.0-preview.1"
+languages:
+  ko:
+    maturity: L3
+    reviewed_at: 2026-08-12
+  en:
+    maturity: L1
+    reviewed_at: 2026-08-12
+  zh-CN:
+    maturity: L1
+    reviewed_at: 2026-08-12
