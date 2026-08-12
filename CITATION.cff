@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "이 교재를 인용할 때 이 메타데이터를 사용해 주세요."
+title: "ROS 2 로봇 실습 강좌"
+type: generic
+version: "1.0.0-preview.1"
+authors:
+  - family-names: "Kim"
+    given-names: "Yongsu"

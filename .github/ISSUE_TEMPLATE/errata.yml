@@ -1,0 +1,27 @@
+name: 교재 오류 정정
+description: 문장·명령·도해·링크 오류를 신고합니다.
+title: "[ERRATA] "
+labels:
+  - errata
+assignees: []
+body:
+  - type: input
+    id: course
+    attributes:
+      label: 강좌·권·단원
+      description: "예: Burger 1권 12단원"
+      placeholder: 강좌와 단원을 입력해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 현재 내용과 문제
+      description: 문제가 되는 문장·명령·도해·링크를 설명해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 재현 환경과 증거
+      description: OS, ROS 배포판, 명령, 로그 또는 화면을 적어 주세요.

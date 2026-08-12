@@ -1,0 +1,37 @@
+name: quality
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  docs-and-tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.6.0
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install documentation dependencies
+        run: python -m pip install -r docs/requirements.txt -c docs/constraints.txt -r requirements-dev.txt
+      - name: Content and link gates
+        run: |
+          python scripts/content_lint.py
+          python scripts/check_relative_links.py
+          python scripts/check_translation_parity.py
+          python scripts/check_snippet_sync.py
+          python scripts/sphinx_source_preflight.py
+      - name: Example and unit tests
+        run: |
+          python -m compileall -q examples tests scripts docs/source/conf.py
+          ruff format --check examples tests scripts docs/source/conf.py
+          ruff check examples tests scripts docs/source/conf.py
+          python -m pytest -q
+      - name: Build HTML and linkcheck
+        run: bash scripts/build_docs.sh
