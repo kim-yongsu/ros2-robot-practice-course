@@ -1,0 +1,5 @@
+:root { --course-accent: #17324d; --course-secondary: #2f6f6a; }
+.content { max-width: 58rem; }
+h1, h2, h3 { color: var(--course-accent); }
+table.docutils { width: 100%; }
+.admonition { border-radius: 0.25rem; }
