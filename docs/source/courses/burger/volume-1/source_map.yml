@@ -1,0 +1,184 @@
+schema_version: '1.0'
+source_document: ROS2_VOLUME1_BURGER_A4_FINAL_v1.0.docx
+source_document_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+source_pdf_sha256: 99665084709197a2a9bc77034df5795c990fa250897fe2ea46dd37db3f409209
+chapters:
+- chapter: 1
+  title: Burger로 ROS 2의 공통 기준선을 만든다
+  source_pdf_page: 5
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/01-burger로-ros-2의-공통-기준선을-만든다.md
+  images:
+  - figure-02.png
+- chapter: 2
+  title: 터미널·Linux 생존선을 먼저 확보한다
+  source_pdf_page: 6
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/02-터미널-linux-생존선을-먼저-확보한다.md
+  images:
+  - figure-03.png
+- chapter: 3
+  title: Ubuntu 22.04.5·ROS 2 Humble 기준선을 고정한다
+  source_pdf_page: 7
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/03-ubuntu-22-04-5-ros-2-humble-기준선을-고정한다.md
+  images:
+  - figure-04.png
+- chapter: 4
+  title: ISO·APT·GitHub·workspace의 계보를 분리한다
+  source_pdf_page: 8
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/04-iso-apt-github-workspace의-계보를-분리한다.md
+  images:
+  - figure-05.png
+- chapter: 5
+  title: Package·Executable·Process·Node를 구분한다
+  source_pdf_page: 9
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/05-package-executable-process-node를-구분한다.md
+  images:
+  - figure-06.png
+- chapter: 6
+  title: Topic·Service·Action·Parameter를 선택한다
+  source_pdf_page: 10
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/06-topic-service-action-parameter를-선택한다.md
+  images:
+  - figure-07.png
+- chapter: 7
+  title: 이름보다 type·endpoint·QoS·실제 값을 본다
+  source_pdf_page: 11
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/07-이름보다-type-endpoint-qos-실제-값을-본다.md
+  images:
+  - figure-08.png
+- chapter: 8
+  title: 실제 Humble 증거 — turtlesim과 rqt_graph
+  source_pdf_page: 12
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/08-실제-humble-증거-turtlesim과-rqt_graph.md
+  images:
+  - figure-09.png
+- chapter: 9
+  title: 실제 Humble 증거 — C++ talker와 Python listener
+  source_pdf_page: 13
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/09-실제-humble-증거-c-talker와-python-listener.md
+  images:
+  - figure-10.png
+- chapter: 10
+  title: ROS graph가 안 보이면 층을 나눈다
+  source_pdf_page: 14
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/10-ros-graph가-안-보이면-층을-나눈다.md
+  images:
+  - figure-11.png
+- chapter: 11
+  title: PoseStamped는 frame·time·position·orientation 계약이다
+  source_pdf_page: 15
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/11-posestamped는-frame-time-position-orientation-계약이다.md
+  images:
+  - figure-12.png
+- chapter: 12
+  title: TF edge마다 authority와 시간을 확인한다
+  source_pdf_page: 16
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/12-tf-edge마다-authority와-시간을-확인한다.md
+  images:
+  - figure-13.png
+- chapter: 13
+  title: URDF와 robot_state_publisher의 책임을 나눈다
+  source_pdf_page: 17
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/13-urdf와-robot_state_publisher의-책임을-나눈다.md
+  images:
+  - figure-14.png
+- chapter: 14
+  title: /cmd_vel과 실제 바퀴 사이의 경계를 나눈다
+  source_pdf_page: 18
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/14-cmd_vel과-실제-바퀴-사이의-경계를-나눈다.md
+  images:
+  - figure-15.png
+- chapter: 15
+  title: bringup은 일곱 게이트를 통과한 뒤 실행한다
+  source_pdf_page: 19
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/15-bringup은-일곱-게이트를-통과한-뒤-실행한다.md
+  images:
+  - figure-16.png
+- chapter: 16
+  title: 첫 teleop은 0.01 m/s 한 단계와 즉시 정지로 시작한다
+  source_pdf_page: 20
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/16-첫-teleop은-0-01-m-s-한-단계와-즉시-정지로-시작한다.md
+  images:
+  - figure-17.png
+- chapter: 17
+  title: Gazebo Classic은 Humble 가상 증거로만 사용한다
+  source_pdf_page: 21
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/17-gazebo-classic은-humble-가상-증거로만-사용한다.md
+  images:
+  - figure-18.png
+- chapter: 18
+  title: SLAM은 지도 품질과 파일 계약까지 닫는다
+  source_pdf_page: 22
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/18-slam은-지도-품질과-파일-계약까지-닫는다.md
+  images:
+  - figure-19.png
+- chapter: 19
+  title: Initial Pose는 scan-map 정합으로 판정한다
+  source_pdf_page: 23
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/19-initial-pose는-scan-map-정합으로-판정한다.md
+  images:
+  - figure-20.png
+- chapter: 20
+  title: Nav2 Goal은 네 게이트를 모두 통과한 뒤 보낸다
+  source_pdf_page: 24
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/20-nav2-goal은-네-게이트를-모두-통과한-뒤-보낸다.md
+  images:
+  - figure-21.png
+- chapter: 21
+  title: NavigateToPose는 모듈형 ament_python 패키지로 만든다
+  source_pdf_page: 25
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/21-navigatetopose는-모듈형-ament_python-패키지로-만든다.md
+  images:
+  - figure-22.png
+- chapter: 22
+  title: 문제는 처음 깨진 계층에서 자른다
+  source_pdf_page: 26
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/22-문제는-처음-깨진-계층에서-자른다.md
+  images:
+  - figure-23.png
+- chapter: 23
+  title: Evidence Pack은 세 증거층을 한 RUN_ID로 묶는다
+  source_pdf_page: 27
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/23-evidence-pack은-세-증거층을-한-run_id로-묶는다.md
+  images:
+  - figure-24.png
+- chapter: 24
+  title: 한 변수만 바꾸고 같은 시험으로 회귀한다
+  source_pdf_page: 28
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/24-한-변수만-바꾸고-같은-시험으로-회귀한다.md
+  images:
+  - figure-25.png
+- chapter: 25
+  title: 조별 프로젝트는 재현·안전·증거로 완료한다
+  source_pdf_page: 29
+  source_docx_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+  markdown: docs/source/courses/burger/volume-1/chapters/25-조별-프로젝트는-재현-안전-증거로-완료한다.md
+  images:
+  - figure-26.png
+normalizations:
+- type: remove_undefined_production_trace_ids
+  count: 16
+  reason: 온라인 독자에게 정의되지 않은 제작 단계 식별자를 제거함
