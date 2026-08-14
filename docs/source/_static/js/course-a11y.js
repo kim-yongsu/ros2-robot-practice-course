@@ -4,6 +4,14 @@ const SELECTORS = Object.freeze({
   header: ".bd-header, header",
 });
 
+const normalizeThemeMode = () => {
+  const validModes = new Set(["auto", "light", "dark"]);
+  const mode = document.documentElement.dataset.theme || "";
+  if (!validModes.has(mode)) {
+    document.documentElement.dataset.theme = "auto";
+  }
+};
+
 const ensureMainTarget = () => {
   const main = document.querySelector(SELECTORS.main);
   if (main && !main.id) {
@@ -72,6 +80,7 @@ const labelThemeTreeToggles = () => {
 };
 
 const initialize = () => {
+  normalizeThemeMode();
   ensureSkipLink();
   bindKeyboardSearch();
   setScrollPadding();
