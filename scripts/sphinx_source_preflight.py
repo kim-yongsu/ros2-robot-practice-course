@@ -112,7 +112,13 @@ def check_markdown(errors: list[str]) -> dict[Path, list[Path]]:
             errors.append(f"{relative}: Markdown parse error: {exc}")
             tokens = []
 
-        h1_count = sum(token.type == "heading_open" and token.tag == "h1" for token in tokens)
+        markdown_h1 = sum(token.type == "heading_open" and token.tag == "h1" for token in tokens)
+        raw_h1 = sum(
+            len(re.findall(r"<h1(?:\s|>)", token.content, re.IGNORECASE))
+            for token in tokens
+            if token.type in {"html_block", "html_inline"}
+        )
+        h1_count = markdown_h1 + raw_h1
         if h1_count != 1:
             errors.append(f"{relative}: expected exactly one level-1 heading, got {h1_count}")
         if frontmatter:
@@ -223,10 +229,24 @@ def check_configuration(errors: list[str]) -> None:
         errors.append("docs requirements and constraints must be identical and pinned")
     if any("==" not in line for line in requirements if line.strip() and not line.startswith("#")):
         errors.append("all documentation dependencies must be exact pins")
-    if not (DOCS / "_static" / "course.css").is_file():
-        errors.append("docs/source/_static/course.css is missing")
+    required_static = (
+        DOCS / "_static/css/course.css",
+        DOCS / "_static/js/course-progress-storage.js",
+        DOCS / "_static/js/course-progress.js",
+        DOCS / "_static/js/course-a11y.js",
+        DOCS / "_static/img/course-mark.svg",
+    )
+    for path in required_static:
+        if not path.is_file():
+            errors.append(f"missing required course static file: {path.relative_to(ROOT)}")
     conf = (DOCS / "conf.py").read_text(encoding="utf-8")
-    for token in ("myst_parser", "furo", 'language = "ko"', "nitpicky = True"):
+    for token in (
+        "myst_parser",
+        "pydata_sphinx_theme",
+        "sphinx_design",
+        'language = "ko"',
+        "nitpicky = True",
+    ):
         if token not in conf:
             errors.append(f"docs/source/conf.py is missing required contract token {token!r}")
 

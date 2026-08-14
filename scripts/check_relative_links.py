@@ -8,12 +8,13 @@ from pathlib import Path
 
 LINK_PATTERN = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 ROOT = Path(__file__).resolve().parents[1]
+BLOCKED_PARTS = {".git", "_build", "node_modules"}
 
 
 def markdown_files(root: Path) -> Iterable[Path]:
     """Yield Markdown files outside generated build directories."""
     for path in root.rglob("*.md"):
-        if not any(part in {"_build", ".git"} for part in path.parts):
+        if not any(part in BLOCKED_PARTS for part in path.parts):
             yield path
 
 

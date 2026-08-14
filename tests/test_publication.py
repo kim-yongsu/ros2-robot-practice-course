@@ -28,7 +28,7 @@ def test_source_map_matches_chapters() -> None:
     payload = yaml.safe_load(source_map.read_text(encoding="utf-8"))
     assert len(payload["chapters"]) == 25
     assert [row["source_pdf_page"] for row in payload["chapters"]] == list(range(5, 30))
-    assert payload["normalizations"][0]["type"] == ("remove_undefined_production_trace_ids")
+    assert payload["normalizations"][0]["type"] == ("remove_unresolved_source_annotations")
 
 
 def test_example_is_syntax_valid_and_has_main_guard() -> None:

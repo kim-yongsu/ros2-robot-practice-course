@@ -6,6 +6,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+node_modules/
 docs/_build/
 docs/source/_static/generated/
 *.egg-info/

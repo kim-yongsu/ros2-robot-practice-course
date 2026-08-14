@@ -1,9 +1,16 @@
-# 지원 버전
+---
+title: 지원 기준
+canonical_language: ko
+---
 
-| 구분 | 현재 범위 |
+# 지원 기준
+
+| 항목 | 이 1권의 기준 |
 | --- | --- |
-| 문서 기준 OS | Ubuntu 22.04.5 LTS |
-| 문서 기준 ROS | ROS 2 Humble |
-| 학습 기체 | TurtleBot3 Burger |
-| 실제 통합 검증 | HOLD |
-| Jazzy | 차이 설명의 참고 대상이며 지원 완료를 주장하지 않음 |
+| Ubuntu | 22.04.5 Jammy |
+| ROS 2 | Humble |
+| 기체 | TurtleBot3 Burger |
+| simulation | Gazebo Classic · Humble branch |
+| Jazzy 차이 | 명령을 병합하지 않고 별도 경계로만 표시 |
+
+실제 Node 이름·plugin·device path·QoS·command type은 설치본에서 탐지한다. 검증하지 않은 버전 지원을 추가하지 않는다.

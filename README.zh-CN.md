@@ -6,6 +6,12 @@
 
 # ROS 2 机器人实践课程
 
+Online course home: <https://kim-yongsu.github.io/ros2-robot-practice-course/>
+
+Burger Volume 1: <https://kim-yongsu.github.io/ros2-robot-practice-course/courses/burger/volume-1/>
+
+Korean is the canonical full course. Chinese is an L1 landing page, not a full translation.
+
 韩文 MyST 文档是规范来源。当前预览仅包含 TurtleBot3 Burger
 第 1 卷。Waffle Pi、Waffle Pi Tank 与 C2 六轴 MoMa 在原稿和
 验证证据齐备前保持“准备中”状态。

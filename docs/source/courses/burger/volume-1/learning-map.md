@@ -1,20 +1,39 @@
-# 여섯 단계가 하나의 Burger 기준선으로 이어진다
+---
+title: 6단계 학습 지도
+canonical_language: ko
+course_id: burger-v1
+status: source-supported
+---
 
-앞 단계의 정상 결과가 다음 단계의 입력이다. 중간 단계를 건너뛰면 같은 명령도 다른 시스템을 만든다.
+# 6단계 학습 지도
 
-| 단계 | 학습 범위 | 종료 능력 |
-| ---: | --- | --- |
-| 1 | 터미널·환경·Workspace | 명령 위치와 source를 설명한다. |
-| 2 | Node·Topic·Service·Action | ROS graph 계약을 확인한다. |
-| 3 | Domain·Pose·TF·URDF | 좌표·시간·모델을 읽는다. |
-| 4 | Burger bringup·teleop | 저속 주행과 STOP을 검증한다. |
-| 5 | Gazebo·SLAM·Localization·Nav2 | 시뮬레이션과 실물 증거를 분리한다. |
-| 6 | 패키지·진단·증거·인수인계 | 수정·rollback·HOLD를 남긴다. |
+| PART | 제목 | Lesson | 완료 능력 |
+| --- | --- | --- | --- |
+| 1 | 환경 기준선 | 01–04 | OS · ROS · shell · workspace 기준선을 기록하고 같은 환경을 다시 복구한다. |
+| 2 | ROS 2 통신과 실행 증거 | 05–09 | Package부터 Node까지의 실행 관계와 Topic·Service·Action·Parameter의 계약을 증거로 설명한다. |
+| 3 | 발견·좌표·TF·URDF | 10–13 | ROS graph, PoseStamped, TF edge, robot_state_publisher를 서로 다른 진단층으로 읽는다. |
+| 4 | 실물 명령과 시뮬레이션 | 14–17 | 실물 주행 전 Gate와 STOP을 확인하고 simulation과 실물 증거를 혼동하지 않는다. |
+| 5 | SLAM·Localization·Nav2 | 18–21 | 지도·현재 위치·Goal 상태·Cancel을 분리하고 source-supported 기준으로 판정한다. |
+| 6 | 진단·증거·회귀·프로젝트 | 22–25 | 실패·수정·rollback·증거·인수인계를 같은 실행 조건으로 재현한다. |
 
-**빠른 본선:** 터미널 → ROS graph → 좌표·TF → Burger bringup·teleop → Gazebo → SLAM → Localization → Nav2 → 증거와 인수인계
+## 단계 연결
 
-| 상태 | 정확한 뜻 | 허용 표현 |
-| --- | --- | --- |
-| PASS | 지정한 게이트를 실제로 통과 | 검사 범위 안에서 확인 |
-| HOLD | 필수 입력·환경·실행이 없음 | 검증 필요 |
-| FAIL | 계약 위반 또는 결과 불일치 | 수정 후 재검사 |
+```text
+환경 기준선
+→ 통신과 실행 증거
+→ 발견·좌표·TF·URDF
+→ 실물 명령과 simulation
+→ SLAM·Localization·Nav2
+→ 진단·증거·회귀·프로젝트
+```
+
+각 화살표는 이전 PART의 **실제 PASS 또는 명시된 HOLD**가 다음 PART 입력으로 전달된다는 뜻이다.
+
+## PART 바로가기
+
+- [PART 1 · 환경 기준선](part-01-environment/index.md)
+- [PART 2 · ROS 2 통신과 실행 증거](part-02-communication/index.md)
+- [PART 3 · 발견·좌표·TF·URDF](part-03-frames/index.md)
+- [PART 4 · 실물 명령과 시뮬레이션](part-04-hardware-sim/index.md)
+- [PART 5 · SLAM·Localization·Nav2](part-05-navigation/index.md)
+- [PART 6 · 진단·증거·회귀·프로젝트](part-06-evidence/index.md)

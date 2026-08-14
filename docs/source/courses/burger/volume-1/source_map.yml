@@ -1,7 +1,10 @@
-schema_version: '1.0'
+schema_version: '1.1'
 source_document: ROS2_VOLUME1_BURGER_A4_FINAL_v1.0.docx
 source_document_sha256: f819b1da78119ae16979ef009151382c7ad68186c04fcb7dc96ead2168192189
+source_pdf: ROS2_VOLUME1_BURGER_A4_FINAL_v1.0.pdf
 source_pdf_sha256: 99665084709197a2a9bc77034df5795c990fa250897fe2ea46dd37db3f409209
+course: burger-v1
+canonical_language: ko
 chapters:
 - chapter: 1
   title: Burger로 ROS 2의 공통 기준선을 만든다
@@ -10,6 +13,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/01-burger로-ros-2의-공통-기준선을-만든다.md
   images:
   - figure-02.png
+  part: 1
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 2
   title: 터미널·Linux 생존선을 먼저 확보한다
   source_pdf_page: 6
@@ -17,6 +22,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/02-터미널-linux-생존선을-먼저-확보한다.md
   images:
   - figure-03.png
+  part: 1
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 3
   title: Ubuntu 22.04.5·ROS 2 Humble 기준선을 고정한다
   source_pdf_page: 7
@@ -24,6 +31,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/03-ubuntu-22-04-5-ros-2-humble-기준선을-고정한다.md
   images:
   - figure-04.png
+  part: 1
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 4
   title: ISO·APT·GitHub·workspace의 계보를 분리한다
   source_pdf_page: 8
@@ -31,6 +40,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/04-iso-apt-github-workspace의-계보를-분리한다.md
   images:
   - figure-05.png
+  part: 1
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 5
   title: Package·Executable·Process·Node를 구분한다
   source_pdf_page: 9
@@ -38,6 +49,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/05-package-executable-process-node를-구분한다.md
   images:
   - figure-06.png
+  part: 2
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 6
   title: Topic·Service·Action·Parameter를 선택한다
   source_pdf_page: 10
@@ -45,6 +58,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/06-topic-service-action-parameter를-선택한다.md
   images:
   - figure-07.png
+  part: 2
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 7
   title: 이름보다 type·endpoint·QoS·실제 값을 본다
   source_pdf_page: 11
@@ -52,6 +67,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/07-이름보다-type-endpoint-qos-실제-값을-본다.md
   images:
   - figure-08.png
+  part: 2
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 8
   title: 실제 Humble 증거 — turtlesim과 rqt_graph
   source_pdf_page: 12
@@ -59,6 +76,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/08-실제-humble-증거-turtlesim과-rqt_graph.md
   images:
   - figure-09.png
+  part: 2
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 9
   title: 실제 Humble 증거 — C++ talker와 Python listener
   source_pdf_page: 13
@@ -66,6 +85,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/09-실제-humble-증거-c-talker와-python-listener.md
   images:
   - figure-10.png
+  part: 2
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 10
   title: ROS graph가 안 보이면 층을 나눈다
   source_pdf_page: 14
@@ -73,6 +94,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/10-ros-graph가-안-보이면-층을-나눈다.md
   images:
   - figure-11.png
+  part: 3
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 11
   title: PoseStamped는 frame·time·position·orientation 계약이다
   source_pdf_page: 15
@@ -80,6 +103,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/11-posestamped는-frame-time-position-orientation-계약이다.md
   images:
   - figure-12.png
+  part: 3
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 12
   title: TF edge마다 authority와 시간을 확인한다
   source_pdf_page: 16
@@ -87,6 +112,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/12-tf-edge마다-authority와-시간을-확인한다.md
   images:
   - figure-13.png
+  part: 3
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 13
   title: URDF와 robot_state_publisher의 책임을 나눈다
   source_pdf_page: 17
@@ -94,6 +121,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/13-urdf와-robot_state_publisher의-책임을-나눈다.md
   images:
   - figure-14.png
+  part: 3
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 14
   title: /cmd_vel과 실제 바퀴 사이의 경계를 나눈다
   source_pdf_page: 18
@@ -101,6 +130,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/14-cmd_vel과-실제-바퀴-사이의-경계를-나눈다.md
   images:
   - figure-15.png
+  part: 4
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 15
   title: bringup은 일곱 게이트를 통과한 뒤 실행한다
   source_pdf_page: 19
@@ -108,6 +139,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/15-bringup은-일곱-게이트를-통과한-뒤-실행한다.md
   images:
   - figure-16.png
+  part: 4
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 16
   title: 첫 teleop은 0.01 m/s 한 단계와 즉시 정지로 시작한다
   source_pdf_page: 20
@@ -115,6 +148,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/16-첫-teleop은-0-01-m-s-한-단계와-즉시-정지로-시작한다.md
   images:
   - figure-17.png
+  part: 4
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 17
   title: Gazebo Classic은 Humble 가상 증거로만 사용한다
   source_pdf_page: 21
@@ -122,6 +157,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/17-gazebo-classic은-humble-가상-증거로만-사용한다.md
   images:
   - figure-18.png
+  part: 4
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 18
   title: SLAM은 지도 품질과 파일 계약까지 닫는다
   source_pdf_page: 22
@@ -129,6 +166,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/18-slam은-지도-품질과-파일-계약까지-닫는다.md
   images:
   - figure-19.png
+  part: 5
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 19
   title: Initial Pose는 scan-map 정합으로 판정한다
   source_pdf_page: 23
@@ -136,6 +175,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/19-initial-pose는-scan-map-정합으로-판정한다.md
   images:
   - figure-20.png
+  part: 5
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 20
   title: Nav2 Goal은 네 게이트를 모두 통과한 뒤 보낸다
   source_pdf_page: 24
@@ -143,6 +184,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/20-nav2-goal은-네-게이트를-모두-통과한-뒤-보낸다.md
   images:
   - figure-21.png
+  part: 5
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 21
   title: NavigateToPose는 모듈형 ament_python 패키지로 만든다
   source_pdf_page: 25
@@ -150,6 +193,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/21-navigatetopose는-모듈형-ament_python-패키지로-만든다.md
   images:
   - figure-22.png
+  part: 5
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 22
   title: 문제는 처음 깨진 계층에서 자른다
   source_pdf_page: 26
@@ -157,6 +202,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/22-문제는-처음-깨진-계층에서-자른다.md
   images:
   - figure-23.png
+  part: 6
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 23
   title: Evidence Pack은 세 증거층을 한 RUN_ID로 묶는다
   source_pdf_page: 27
@@ -164,6 +211,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/23-evidence-pack은-세-증거층을-한-run_id로-묶는다.md
   images:
   - figure-24.png
+  part: 6
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 24
   title: 한 변수만 바꾸고 같은 시험으로 회귀한다
   source_pdf_page: 28
@@ -171,6 +220,8 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/24-한-변수만-바꾸고-같은-시험으로-회귀한다.md
   images:
   - figure-25.png
+  part: 6
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 - chapter: 25
   title: 조별 프로젝트는 재현·안전·증거로 완료한다
   source_pdf_page: 29
@@ -178,7 +229,14 @@ chapters:
   markdown: docs/source/courses/burger/volume-1/chapters/25-조별-프로젝트는-재현-안전-증거로-완료한다.md
   images:
   - figure-26.png
+  part: 6
+  provenance: PDF/DOCX source-supported; runtime evidence remains separate
 normalizations:
-- type: remove_undefined_production_trace_ids
+- type: remove_unresolved_source_annotations
   count: 16
-  reason: 온라인 독자에게 정의되지 않은 제작 단계 식별자를 제거함
+  reason: Internal production identifiers are not meaningful to learners.
+- type: preserve_runtime_holds
+  reason: Unexecuted simulator, DDS, Nav2, and physical checks remain HOLD.
+- type: semantic_section_reflow
+  reason: Source text is reorganized into learning sections without new technical
+    claims.

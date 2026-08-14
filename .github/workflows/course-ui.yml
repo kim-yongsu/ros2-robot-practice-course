@@ -1,0 +1,59 @@
+name: course-ui
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "assets/**"
+      - "scripts/**"
+      - "tests/ui/**"
+      - "package.json"
+      - "package-lock.json"
+      - "playwright.config.mjs"
+      - ".github/workflows/course-ui.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  browser-gates:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - name: Install documentation dependencies
+        run: python -m pip install -r docs/requirements.txt -c docs/constraints.txt -r requirements-dev.txt
+      - name: Build documentation
+        run: |
+          python scripts/sync_assets.py
+          python scripts/course_contract_check.py
+          sphinx-build -W --keep-going -b html docs/source docs/_build/html
+      - name: Install browser test dependencies
+        run: |
+          npm ci --ignore-scripts
+          npx playwright install --with-deps chromium
+      - name: Run desktop, mobile, keyboard, and accessibility gates
+        run: npm run test:ui
+      - name: Upload browser evidence on failure
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: course-ui-evidence
+          path: |
+            test-results/
+            playwright-report/
+          if-no-files-found: ignore

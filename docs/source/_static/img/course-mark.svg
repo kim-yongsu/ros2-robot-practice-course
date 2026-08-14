@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ROS 2 로봇 실습 강좌</title>
+  <desc id="desc">네이비 원 안에 Burger 1권을 뜻하는 B1 글자와 청록색 궤도가 있는 표식</desc>
+  <circle cx="32" cy="32" r="29" fill="#17324d"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#46978d" stroke-width="3" stroke-dasharray="6 5"/>
+  <circle cx="50" cy="25" r="4" fill="#b96d20"/>
+  <text x="32" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">B1</text>
+</svg>

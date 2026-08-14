@@ -1,14 +1,12 @@
-# 한계와 검증 경계
+---
+title: 공개 범위와 한계
+canonical_language: ko
+---
 
-이 저장소의 문서·정적 검사 결과는 실제 로봇 통합시험을 대신하지 않는다.
+# 공개 범위와 한계
 
-현재 별도 확인이 필요한 항목은 다음과 같다.
-
-- ROS 2 Humble 환경의 실제 `colcon build/test`
-- 실제 DDS `NavigateToPose` Action server
-- Gazebo·Nav2 통합 실행
-- 실물 TurtleBot3 Burger bringup·SLAM·Localization·Nav2
-- 실물 Goal·Cancel·물리 STOP
-- 공개 배포의 저작권자·관리자·라이선스 결정
-
-실행하지 않은 항목은 PASS로 표시하지 않는다.
+- Burger 1권의 한국어 MyST source와 단일 NavigateToPose 교육 예제를 공개한다.
+- 완전한 ROS package source는 실제 package tree·maintainer identity·license·Humble build/test 증거가 확인되기 전까지 HOLD다.
+- Waffle Pi·Waffle Pi Tank·C2 6축 MoMa 내용은 준비 중이며 추정하지 않는다.
+- simulator·DDS·Nav2·실물 Burger 결과는 실제 evidence가 없는 경우 문서가 PASS를 만들지 않는다.
+- 이 자료는 Open Robotics, ROS 프로젝트 또는 ROBOTIS의 공식 문서가 아니다.

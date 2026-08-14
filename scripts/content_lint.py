@@ -14,6 +14,7 @@ BLOCKED_PARTS = {
     "venv",
     ".tox",
     ".nox",
+    "node_modules",
     "__pycache__",
     ".pytest_cache",
     ".ruff_cache",

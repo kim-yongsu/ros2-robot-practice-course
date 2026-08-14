@@ -1,51 +1,138 @@
-# 1권 · ROS 2 Humble로 마스터하는 TurtleBot3 Burger
+---
+title: Burger 1권 · ROS 2 Humble
+canonical_language: ko
+course_id: burger-v1
+volume: 1
+status: publication-candidate
+sd_hide_title: true
+---
 
-**기준 환경:** Ubuntu 22.04.5 LTS · ROS 2 Humble  
-**학습 기체:** TurtleBot3 Burger  
-**판정 원칙:** 문서와 정적 검증은 실제 장비 통합시험을 대신하지 않는다.
+# Burger 1권 · ROS 2 Humble
 
-![Burger 1권의 환경·통신·좌표·실물·자율주행·현장 증거 여섯 단계 학습 경로](/_static/generated/diagrams/burger/volume-1/figure-01.png)
+<div class="volume-hero">
+  <div>
+    <p class="hero-eyebrow">VOLUME 1 · TURTLEBOT3 BURGER · ROS 2 HUMBLE</p>
+    <p class="course-hero-title" role="heading" aria-level="1">환경 기준선에서 재현 가능한 프로젝트까지</p>
+    <p>6개 PART와 25개 Lesson을 따라가며 목표·명령·결과·STOP·증거·다음 학습을 한 화면에서 확인한다.</p>
+    <div class="hero-actions">
+      <a class="course-button course-button-primary" href="start.html">처음부터 시작</a>
+      <a class="course-button course-button-secondary" href="start.html" data-course-resume-link>마지막 학습 이어보기</a>
+    </div>
+  </div>
+  <div class="volume-cover" aria-label="Burger 1권 표지형 그래픽">
+    <span>ROS 2</span><strong>BURGER</strong><small>VOLUME 1</small>
+  </div>
+</div>
 
-ROS를 처음 접한 독자가 정상 환경의 Burger를 기동하고, 저속 teleop·지도 작성·Localization·기본 Nav2 Goal·계층형 진단을 근거와 함께 설명하도록 안내한다.
+<div class="course-progress-summary" data-course-progress-summary data-course-id="burger-v1">
+  <div class="progress-copy"><strong>학습 진행률</strong><span data-progress-text>0 / 25 Lesson</span></div>
+  <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="25" aria-valuenow="0" aria-label="Burger 1권 완료 Lesson 수"><span data-progress-bar></span></div>
+  <button type="button" class="progress-reset" data-course-progress-reset>진행률 초기화</button>
+  <span class="progress-announcement" data-progress-announcement aria-live="polite"></span>
+</div>
+
+## 6 PART 학습 지도
+
+::::{grid} 1 2 3 3
+:gutter: 3
+:class-container: part-card-grid
+
+:::{grid-item-card} PART 1 · 환경 기준선
+:class-item: part-card part-1
+**Lesson 01–04**
+
+OS · ROS · shell · workspace 기준선을 기록하고 같은 환경을 다시 복구한다.
+
+[PART 시작](./part-01-environment/index.md)
+:::
+:::{grid-item-card} PART 2 · ROS 2 통신과 실행 증거
+:class-item: part-card part-2
+**Lesson 05–09**
+
+Package부터 Node까지의 실행 관계와 Topic·Service·Action·Parameter의 계약을 증거로 설명한다.
+
+[PART 시작](./part-02-communication/index.md)
+:::
+:::{grid-item-card} PART 3 · 발견·좌표·TF·URDF
+:class-item: part-card part-3
+**Lesson 10–13**
+
+ROS graph, PoseStamped, TF edge, robot_state_publisher를 서로 다른 진단층으로 읽는다.
+
+[PART 시작](./part-03-frames/index.md)
+:::
+:::{grid-item-card} PART 4 · 실물 명령과 시뮬레이션
+:class-item: part-card part-4
+**Lesson 14–17**
+
+실물 주행 전 Gate와 STOP을 확인하고 simulation과 실물 증거를 혼동하지 않는다.
+
+[PART 시작](./part-04-hardware-sim/index.md)
+:::
+:::{grid-item-card} PART 5 · SLAM·Localization·Nav2
+:class-item: part-card part-5
+**Lesson 18–21**
+
+지도·현재 위치·Goal 상태·Cancel을 분리하고 source-supported 기준으로 판정한다.
+
+[PART 시작](./part-05-navigation/index.md)
+:::
+:::{grid-item-card} PART 6 · 진단·증거·회귀·프로젝트
+:class-item: part-card part-6
+**Lesson 22–25**
+
+실패·수정·rollback·증거·인수인계를 같은 실행 조건으로 재현한다.
+
+[PART 시작](./part-06-evidence/index.md)
+:::
+
+::::
+
+## 학습 전 요구사항
+
+- [읽는 법](reading-guide.md)에서 VERIFY·STOP·HOLD 원칙을 먼저 확인한다.
+- [6단계 학습 지도](learning-map.md)에서 각 PART의 입력·출력 관계를 확인한다.
+- 실물 시험은 넓은 바닥·정지 담당·전원 차단 수단이 준비된 경우에만 진행한다.
+- 실제 출력·물리 반응·지도·Nav2 Result가 없으면 해당 항목을 `HOLD`로 유지한다.
+
+## 학습 도구
+
+::::{grid} 1 1 3 3
+:gutter: 2
+
+:::{grid-item-card} 문제 해결
+첫 실패 계층부터 자른다.
+
+[진단 사다리](troubleshooting.md)
+:::
+
+:::{grid-item-card} 실습 과제
+Source-supported 과제만 제공한다.
+
+[연습 열기](exercises.md)
+:::
+
+:::{grid-item-card} PDF·Release
+원문 snapshot과 배포 artifact를 확인한다.
+
+[Release 열기](https://github.com/kim-yongsu/ros2-robot-practice-course/releases)
+:::
+
+::::
 
 ```{toctree}
+:hidden:
 :maxdepth: 2
-:caption: 시작하기
 
+start
 reading-guide
 learning-map
+part-01-environment/index
+part-02-communication/index
+part-03-frames/index
+part-04-hardware-sim/index
+part-05-navigation/index
+part-06-evidence/index
 troubleshooting
 exercises
-migration-notes
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: 25개 학습 단원
-
-chapters/01-burger로-ros-2의-공통-기준선을-만든다
-chapters/02-터미널-linux-생존선을-먼저-확보한다
-chapters/03-ubuntu-22-04-5-ros-2-humble-기준선을-고정한다
-chapters/04-iso-apt-github-workspace의-계보를-분리한다
-chapters/05-package-executable-process-node를-구분한다
-chapters/06-topic-service-action-parameter를-선택한다
-chapters/07-이름보다-type-endpoint-qos-실제-값을-본다
-chapters/08-실제-humble-증거-turtlesim과-rqt_graph
-chapters/09-실제-humble-증거-c-talker와-python-listener
-chapters/10-ros-graph가-안-보이면-층을-나눈다
-chapters/11-posestamped는-frame-time-position-orientation-계약이다
-chapters/12-tf-edge마다-authority와-시간을-확인한다
-chapters/13-urdf와-robot_state_publisher의-책임을-나눈다
-chapters/14-cmd_vel과-실제-바퀴-사이의-경계를-나눈다
-chapters/15-bringup은-일곱-게이트를-통과한-뒤-실행한다
-chapters/16-첫-teleop은-0-01-m-s-한-단계와-즉시-정지로-시작한다
-chapters/17-gazebo-classic은-humble-가상-증거로만-사용한다
-chapters/18-slam은-지도-품질과-파일-계약까지-닫는다
-chapters/19-initial-pose는-scan-map-정합으로-판정한다
-chapters/20-nav2-goal은-네-게이트를-모두-통과한-뒤-보낸다
-chapters/21-navigatetopose는-모듈형-ament_python-패키지로-만든다
-chapters/22-문제는-처음-깨진-계층에서-자른다
-chapters/23-evidence-pack은-세-증거층을-한-run_id로-묶는다
-chapters/24-한-변수만-바꾸고-같은-시험으로-회귀한다
-chapters/25-조별-프로젝트는-재현-안전-증거로-완료한다
 ```
