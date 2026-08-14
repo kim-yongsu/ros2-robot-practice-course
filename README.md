@@ -33,7 +33,7 @@ Waffle Pi · Waffle Pi Tank · C2 6축 MoMa는 완료 source가 들어오기 전
 | 영역 | 상태 |
 | --- | --- |
 | Burger 1권 한국어 교재 | 출판 후보 |
-| 온라인 교재 | Pages 배포 검증 대기 |
+| 온라인 교재 | 공개 운영 중 |
 | Waffle Pi / Tank / C2 | 준비 중 |
 | 완전한 ROS package source | HOLD — 공개 입력 미완료 |
 | 실제 Humble `colcon build/test` | HOLD |
