@@ -46,3 +46,19 @@ status: source-supported
 ## 진행률
 
 완료 표시는 브라우저 `localStorage`의 `ros2-course:burger:v1:progress` 키에만 저장된다. 서버 전송·로그인·추적은 없으며, JavaScript가 꺼져도 전체 본문과 링크를 사용할 수 있다.
+
+## 이전 / 다음 학습
+
+::::{grid} 1 1 2 2
+:gutter: 2
+:class-container: lesson-prev-next
+
+:::{grid-item-card} ← 이전 학습
+[Burger 1권 시작하기](start.md)
+:::
+
+:::{grid-item-card} 다음 학습 →
+[6단계 학습 지도](learning-map.md)
+:::
+
+::::

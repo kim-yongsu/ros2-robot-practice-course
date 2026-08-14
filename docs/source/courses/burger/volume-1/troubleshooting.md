@@ -40,3 +40,19 @@ status: source-supported
 :::{danger}
 정지 불가·발열·반복 disconnect가 있으면 진단 명령보다 먼저 STOP하고 전원을 차단한다.
 :::
+
+## 이전 / 다음 학습
+
+::::{grid} 1 1 2 2
+:gutter: 2
+:class-container: lesson-prev-next
+
+:::{grid-item-card} ← 이전 학습
+[PART 6 · 진단·증거·회귀·프로젝트](part-06-evidence/index.md)
+:::
+
+:::{grid-item-card} 다음 학습 →
+[1권 실습 과제](exercises.md)
+:::
+
+::::

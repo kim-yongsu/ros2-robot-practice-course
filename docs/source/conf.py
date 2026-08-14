@@ -48,7 +48,7 @@ html_theme_options = {
     "navigation_depth": 5,
     "show_nav_level": 2,
     "show_toc_level": 2,
-    "show_prev_next": True,
+    "show_prev_next": False,
     "back_to_top_button": True,
     "search_bar_text": "강좌에서 검색",
     "secondary_sidebar_items": ["page-toc"],

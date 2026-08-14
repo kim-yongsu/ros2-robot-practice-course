@@ -44,3 +44,19 @@ Burger 1권의 독자·판정 원칙·종료 Gate부터 확인한다.
 - STOP 여부
 - 증거 파일·RUN_ID·hash
 - 다음 시작점
+
+## 이전 / 다음 학습
+
+::::{grid} 1 1 2 2
+:gutter: 2
+:class-container: lesson-prev-next
+
+:::{grid-item-card} ← 이전 학습
+[1권 강좌 홈](index.md)
+:::
+
+:::{grid-item-card} 다음 학습 →
+[읽는 법과 판정 원칙](reading-guide.md)
+:::
+
+::::

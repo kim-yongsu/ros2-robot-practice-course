@@ -37,3 +37,19 @@ status: source-supported
 - [PART 4 · 실물 명령과 시뮬레이션](part-04-hardware-sim/index.md)
 - [PART 5 · SLAM·Localization·Nav2](part-05-navigation/index.md)
 - [PART 6 · 진단·증거·회귀·프로젝트](part-06-evidence/index.md)
+
+## 이전 / 다음 학습
+
+::::{grid} 1 1 2 2
+:gutter: 2
+:class-container: lesson-prev-next
+
+:::{grid-item-card} ← 이전 학습
+[읽는 법과 판정 원칙](reading-guide.md)
+:::
+
+:::{grid-item-card} 다음 학습 →
+[PART 1 · 환경 기준선](part-01-environment/index.md)
+:::
+
+::::

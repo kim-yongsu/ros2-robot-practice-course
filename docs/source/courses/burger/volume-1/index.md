@@ -120,6 +120,18 @@ Source-supported 과제만 제공한다.
 
 ::::
 
+## 다음 학습
+
+::::{grid} 1 1 2 2
+:gutter: 2
+:class-container: lesson-prev-next
+
+:::{grid-item-card} 다음 학습 →
+[Burger 1권 시작하기](start.md)
+:::
+
+::::
+
 ```{toctree}
 :hidden:
 :maxdepth: 2

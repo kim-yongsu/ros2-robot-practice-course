@@ -36,3 +36,19 @@ RUN_ID 하나에 환경·ROS·물리 evidence를 묶고 한 변수 변경 전후
 ## 최종 프로젝트 계약
 
 [Lesson 25](chapters/25-조별-프로젝트는-재현-안전-증거로-완료한다.md)의 준비·임무·안전·재현·포트폴리오 다섯 계층을 사용한다. simulator 3회·실물 3회·물리 STOP·팀 역할은 실제 증거가 들어오기 전까지 HOLD다.
+
+## 이전 / 다음 학습
+
+::::{grid} 1 1 2 2
+:gutter: 2
+:class-container: lesson-prev-next
+
+:::{grid-item-card} ← 이전 학습
+[Lesson 25 · 조별 프로젝트는 재현·안전·증거로 완료한다](chapters/25-조별-프로젝트는-재현-안전-증거로-완료한다.md)
+:::
+
+:::{grid-item-card} 다음 학습 →
+[Burger 1권 강좌 홈](index.md)
+:::
+
+::::

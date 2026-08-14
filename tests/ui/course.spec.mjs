@@ -4,8 +4,13 @@ import { expect, test } from "@playwright/test";
 const URLS = Object.freeze({
   home: "/index.html",
   volume: "/courses/burger/volume-1/index.html",
+  start: "/courses/burger/volume-1/start.html",
+  readingGuide: "/courses/burger/volume-1/reading-guide.html",
+  learningMap: "/courses/burger/volume-1/learning-map.html",
   part: "/courses/burger/volume-1/part-01-environment/index.html",
   lesson: "/courses/burger/volume-1/chapters/01-burger로-ros-2의-공통-기준선을-만든다.html",
+  troubleshooting: "/courses/burger/volume-1/troubleshooting.html",
+  exercises: "/courses/burger/volume-1/exercises.html",
 });
 
 const expectNoHorizontalOverflow = async (page) => {
@@ -85,4 +90,21 @@ test("PART landing remains usable without hover", async ({ page }) => {
   await expect(page.locator(".lesson-card")).toHaveCount(4);
   await expect(page.getByRole("link", { name: "학습하기" }).first()).toBeVisible();
   await expectNoHorizontalOverflow(page);
+});
+
+test("course pages use one consistent learning navigation", async ({ page }) => {
+  for (const url of [
+    URLS.volume,
+    URLS.start,
+    URLS.readingGuide,
+    URLS.learningMap,
+    URLS.part,
+    URLS.lesson,
+    URLS.troubleshooting,
+    URLS.exercises,
+  ]) {
+    await page.goto(url);
+    await expect(page.locator(".lesson-prev-next")).toHaveCount(1);
+    await expect(page.locator(".prev-next-footer, .prev-page, .next-page")).toHaveCount(0);
+  }
 });
