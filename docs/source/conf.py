@@ -32,6 +32,7 @@ html_baseurl = "https://kim-yongsu.github.io/ros2-robot-practice-course/"
 html_static_path = ["_static"]
 html_css_files = ["css/course.css"]
 html_js_files = [
+    "js/course-theme-init.js",
     ("js/course-a11y.js", {"type": "module"}),
     ("js/course-progress.js", {"type": "module"}),
 ]
